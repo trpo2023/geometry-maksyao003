@@ -1,10 +1,6 @@
 
+ all : geometry.o
+ 
+ geometry.o : geometry.c
+	gcc -Wall -Werror geometry.c -o geometry -lm
 
-  Hello : main.o
-	gcc main.o -o Hello
-	
-  main.o : main.c
-	gcc -c -Wall -Werror main.c -o main.o
-		
-
-      
