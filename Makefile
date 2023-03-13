@@ -1,6 +1,6 @@
 
- all : geometry.o
+ all : geometry
  
- geometry.o : geometry.c
+ geometry : geometry.c
 	gcc -Wall -Werror geometry.c -o geometry -lm
 
